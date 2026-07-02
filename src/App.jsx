@@ -24,7 +24,7 @@ function App() {
       <ScrollProgress />
       <ThemeToggle />
 
-      <div className="bg-[#020817] text-white">
+      <div className="bg-[#020817] text-white min-h-screen">
         <Navbar />
         <Hero />
         <About />

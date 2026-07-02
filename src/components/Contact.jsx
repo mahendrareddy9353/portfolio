@@ -1,4 +1,5 @@
-import { Mail, Github, Linkedin, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -34,11 +35,9 @@ export default function Contact() {
             rows="5"
             placeholder="Message"
             className="w-full p-4 rounded-xl bg-slate-900"
-          ></textarea>
+          />
 
-          <button
-            className="bg-cyan-500 px-8 py-3 rounded-xl hover:bg-cyan-600"
-          >
+          <button className="bg-cyan-500 px-8 py-3 rounded-xl hover:bg-cyan-600">
             Send Message
           </button>
 
@@ -48,17 +47,17 @@ export default function Contact() {
 
           <div className="flex items-center gap-3">
             <Mail />
-            yourmail@gmail.com
+            mahendrareddypatil328@gmail.com
           </div>
 
           <div className="flex items-center gap-3">
-            <Github />
-            github.com/yourusername
+            <FaGithub />
+            github.com/mahendrareddy9353
           </div>
 
           <div className="flex items-center gap-3">
-            <Linkedin />
-            linkedin.com/in/yourusername
+            <FaLinkedin />
+            linkedin.com
           </div>
 
           <div className="flex items-center gap-3">

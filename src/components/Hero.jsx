@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
@@ -24,7 +25,6 @@ export default function Hero() {
           </h1>
 
           <div className="text-3xl mt-6 text-blue-400 font-semibold">
-
             <TypeAnimation
               sequence={[
                 "Java Developer",
@@ -40,7 +40,6 @@ export default function Hero() {
               speed={40}
               repeat={Infinity}
             />
-
           </div>
 
           <p className="text-gray-400 mt-8 leading-8">
@@ -50,27 +49,38 @@ export default function Hero() {
           </p>
 
           <div className="flex gap-5 mt-10">
-
-            <button className="bg-cyan-500 px-6 py-3 rounded-xl hover:scale-105 duration-300">
+            <button className="bg-cyan-500 px-6 py-3 rounded-xl hover:bg-cyan-600">
               Download Resume
             </button>
 
-            <button className="border border-cyan-400 px-6 py-3 rounded-xl hover:bg-cyan-500 hover:border-cyan-500 duration-300">
+            <button className="border border-cyan-400 px-6 py-3 rounded-xl hover:bg-cyan-500">
               View Projects
             </button>
-
           </div>
 
-          <div className="flex gap-5 mt-10">
+          <div className="flex gap-6 mt-10 text-3xl">
 
-            <Github className="cursor-pointer hover:text-cyan-400" size={28} />
+            <a
+              href="https://github.com/mahendrareddy9353"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGithub className="hover:text-cyan-400" />
+            </a>
 
-            <Linkedin className="cursor-pointer hover:text-cyan-400" size={28} />
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin className="hover:text-cyan-400" />
+            </a>
 
-            <Mail className="cursor-pointer hover:text-cyan-400" size={28} />
+            <a href="mailto:mahendrareddypatil328@gmail.com">
+              <Mail className="hover:text-cyan-400" />
+            </a>
 
           </div>
-
         </motion.div>
 
         <motion.div
@@ -79,13 +89,11 @@ export default function Hero() {
           transition={{ duration: 1 }}
           className="flex justify-center"
         >
-
           <img
             src="/profile.png"
             alt="Mahendra"
             className="w-96 rounded-full border-4 border-cyan-400 shadow-2xl"
           />
-
         </motion.div>
 
       </div>
